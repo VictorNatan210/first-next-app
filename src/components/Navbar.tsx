@@ -2,11 +2,22 @@
 
 import style from "../styles/Navbar.module.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 768) {
+                setOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
         <nav className={style.navbar_container}>
@@ -22,7 +33,7 @@ export default function Navbar() {
                 <li><Link href="#">Projetos</Link></li>
             </ul>
 
-            <button className={style.navbar_menu_button} onClick={() => setOpen(!isOpen)}>
+            <button className={`${style.navbar_menu_button} ${isOpen ? style.open : ""}`} onClick={() => setOpen(!isOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,9 +47,3 @@ export default function Navbar() {
         </nav>
     );
 }
-
-
-{/* <ul>
-<li><Link href="#">Página Inicial</Link></li>
-<li><Link href="#">Projetos</Link></li>
-</ul> */}
