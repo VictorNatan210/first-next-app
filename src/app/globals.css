@@ -1,7 +1,21 @@
 :root {
-  --primary-color: #66d2bd;
-  --primary-color-dark: #4ac1a9;
-  --primary-color-light: #90F5E1;
+  /* Base escura */
+  --bg-dark: #121212;
+  --overlay: #1E1E1E;
+  --gray-dark: #2D2D2D;
+  
+  /* Texto */
+  --text-primary: #FFFFFF;
+  --text-secondary: #444444;
+  
+  /* Destaques */
+  --accent-blue: #3A7BDB;
+  --accent-green: #2EBD85;
+  --accent-wine: #A83D5E;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html, body {

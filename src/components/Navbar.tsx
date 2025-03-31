@@ -20,30 +20,36 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className={style.navbar_container}>
+        <div className={style.navbar_container_wrapper}>
+            <nav className={style.navbar}>
+                <div className={style.navbar_container}>
+                    <div className={style.logo}>
+                        <div></div>
+                        <Link href="/">VictorNatan</Link>
+                    </div>
+                    <div className={`${style.navbar_links} ${isOpen ? style.open : ""}`}>
+                        <ul>
+                            <li><Link href="#">Página Inicial</Link></li>
+                            <li><Link href="#">Projetos</Link></li>
+                            <li><Link href="#">Contato</Link></li>
+                        </ul>
+                    </div>
+                    {/* Mobile */}
+                    <button className={`${style.navbar_button} ${isOpen ? style.open : ""}`} onClick={() => setOpen(!isOpen)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
 
-            <div className={style.navbar_logo}>
-                <div className={style.navbar_logo_circle}></div>
-                <Link href="/" className={style.navbar_logo_underline}>
-                VictorNatan</Link>
+            <div className={`${style.navbar_links_mobile} ${isOpen ? style.open : ""}`}>
+                        <ul>
+                            <li><Link href="#">Página Inicial</Link></li>
+                            <li><Link href="#">Projetos</Link></li>
+                            <li><Link href="#">Contato</Link></li>
+                        </ul>
             </div>
-
-            <ul className={style.navbar_menu}>
-                <li><Link href="#">Página Inicial</Link></li>
-                <li><Link href="#">Projetos</Link></li>
-            </ul>
-
-            <button className={`${style.navbar_menu_button} ${isOpen ? style.open : ""}`} onClick={() => setOpen(!isOpen)}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            {/* Menu para telas pequenas */}
-            <ul className={`${style.navbar_menu_mobile} ${isOpen ? style.open : ""}`}>
-                <li><Link href="#">Página Inicial</Link></li>
-                <li><Link href="#">Projetos</Link></li>
-            </ul>
-        </nav>
+        </div>
     );
 }
