@@ -8,7 +8,7 @@ export default function Home() {
         <Navbar></Navbar>
       </header>
       <main className={styles.main}>
-
+        
       </main>
       <footer className={styles.footer}>
         
