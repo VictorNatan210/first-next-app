@@ -23,10 +23,8 @@ export default function Navbar() {
         <div className={style.navbar_container_wrapper}>
             <nav className={style.navbar}>
                 <div className={style.navbar_container}>
-                    <div className={style.logo}>
-                        <div></div>
-                        <Link href="/">VictorNatan</Link>
-                    </div>
+                    <Link className={style.logo} href="/">VictorNatan</Link>
+
                     <div className={`${style.navbar_links} ${isOpen ? style.open : ""}`}>
                         <ul>
                             <li><Link href="#">Página Inicial</Link></li>
@@ -34,18 +32,17 @@ export default function Navbar() {
                             <li><Link href="#">Contato</Link></li>
                         </ul>
                     </div>
-                    {/* Mobile */}
-                    <button 
-                    className={`${style.navbar_button} ${isOpen ? style.open : ""}`}
-
+            
+                    
+                    <button className={`${style.navbar_button} ${isOpen ? style.open : ""}`}
                     onClick={() => setOpen(!isOpen)}
-
                     aria-expanded={isOpen}
                     aria-label="Abrir menu de navegação">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </button>
+                    </button> 
+                   
                 </div>
             </nav>
 
