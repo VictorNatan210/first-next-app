@@ -70,14 +70,14 @@
 /* Mobile Button & Link */
 
 .navbar_links_mobile {
-    display: none;
-    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
     background-color: var(--overlay);
-    align-items: center;
+    transition: max-height .3s ease;
 }
 
 .navbar_links_mobile.open {
-    display: flex;
+    max-height: 300px;
 }
 
 .navbar_links_mobile ul {
