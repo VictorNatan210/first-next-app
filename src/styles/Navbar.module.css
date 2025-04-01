@@ -30,6 +30,7 @@
     font-weight: bold;
     color: var(--text-primary);
     text-decoration: none;
+    outline: none;
 }
 
 .navbar_links ul {
@@ -98,6 +99,7 @@
     border: none;
     background: none;
     cursor: pointer;
+    outline: none;
 }
 
 .navbar_button span {
