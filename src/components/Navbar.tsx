@@ -27,9 +27,9 @@ export default function Navbar() {
 
                     <div className={`${style.navbar_links} ${isOpen ? style.open : ""}`}>
                         <ul>
-                            <li><Link href="#">Página Inicial</Link></li>
+                            <li><Link href="#">Sobre Mim</Link></li>
+                            <li><Link href="#">Redes Sociais</Link></li>
                             <li><Link href="#">Projetos</Link></li>
-                            <li><Link href="#">Contato</Link></li>
                         </ul>
                     </div>
             
@@ -51,7 +51,7 @@ export default function Navbar() {
                             <li><Link 
                             href="#"
                             onClick={() => setOpen(false)}
-                            >Página Inicial</Link></li>
+                            >Sobre Mim</Link></li>
 
                             <li><Link 
                             href="#"
@@ -59,7 +59,7 @@ export default function Navbar() {
             
                             <li><Link 
                             href="#"
-                            onClick={() => setOpen(false)}>Contato</Link></li>
+                            onClick={() => setOpen(false)}>Redes Sociais</Link></li>
                         </ul>
             </div>
         </div>

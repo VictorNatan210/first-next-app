@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .navbar_container_wrapper {
+    background-color: var(--bg-dark-transparent);
     backdrop-filter: blur(10px);
-    background-color: var(--bg-dark);
+    -webkit-backdrop-filter: blur(10px);
+
     box-shadow: 0 0 10px black;
+    border: 2px solid var(--overlay);
+    border-radius: 5px;
+
     position: fixed;
     max-width: 1200px;
-    border-radius: 5px;
     margin: 0 auto;
     right: 0;
     left: 0;
@@ -29,6 +33,7 @@
 }
 
 .logo {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--text-primary);
@@ -36,22 +41,30 @@
     outline: none;
 }
 
+.logo:hover {
+    color: #dbdbdb;
+}
+
 .navbar_links ul {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
 .navbar_links ul li a {
     color: var(--text-primary);
+    border-radius: 3px;
     font-size: 1rem;
-    font-weight: 600;
     text-decoration: none;
     transition: color .3s ease;
 }
 
 .navbar_links ul li a:hover {
     color: var(--accent-blue);
+}
+
+.navbar_links ul li a:focus {
+    text-decoration: underline;
 }
 
 /* Mobile Button & Link */
@@ -150,5 +163,10 @@
 
     .navbar_button {
         display: flex;
+    }
+
+    .navbar_container_wrapper {
+        border-radius: 0;
+        border: 0;
     }
 }

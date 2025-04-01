@@ -1,6 +1,7 @@
 :root {
   /* Base escura */
   --bg-dark: #121212;
+  --bg-dark-transparent: #121212da;
   --overlay: #1E1E1E;
   --gray-dark: #2D2D2D;
   
