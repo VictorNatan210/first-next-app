@@ -35,7 +35,13 @@ export default function Navbar() {
                         </ul>
                     </div>
                     {/* Mobile */}
-                    <button className={`${style.navbar_button} ${isOpen ? style.open : ""}`} onClick={() => setOpen(!isOpen)}>
+                    <button 
+                    className={`${style.navbar_button} ${isOpen ? style.open : ""}`}
+
+                    onClick={() => setOpen(!isOpen)}
+
+                    aria-expanded={isOpen}
+                    aria-label="Abrir menu de navegação">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,9 +51,18 @@ export default function Navbar() {
 
             <div className={`${style.navbar_links_mobile} ${isOpen ? style.open : ""}`}>
                         <ul>
-                            <li><Link href="#">Página Inicial</Link></li>
-                            <li><Link href="#">Projetos</Link></li>
-                            <li><Link href="#">Contato</Link></li>
+                            <li><Link 
+                            href="#"
+                            onClick={() => setOpen(false)}
+                            >Página Inicial</Link></li>
+
+                            <li><Link 
+                            href="#"
+                            onClick={() => setOpen(false)}>Projetos</Link></li>
+            
+                            <li><Link 
+                            href="#"
+                            onClick={() => setOpen(false)}>Contato</Link></li>
                         </ul>
             </div>
         </div>
