@@ -31,7 +31,7 @@ export default function Home() {
               </p>
               <div className={style.profile_skills}>
                 <span>🚀 Foco Atual:</span>
-                <p>Java, Next.js, TypeScript.js e Design Systems</p>
+                <p>Java, Next.js, TypeScript e Design Systems</p>
               </div>
             </div>
 
