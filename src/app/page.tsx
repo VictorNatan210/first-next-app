@@ -1,59 +1,45 @@
-import styles from "./page.module.css";
+"use client";
+import style from "./page.module.css";
 import Navbar from "../components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
       <header>
-        <Navbar></Navbar>
+        <Navbar />
       </header>
-      <main className={styles.main}>
-        <section>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
 
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-
+      <main className={style.main}>
+        <section className={style.profile_container}>
+          <h1>Sobre Mim</h1>
           
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt nam culpa optio minima dolor tempore blanditiis cupiditate reprehenderit voluptate inventore maxime laborum quod, sapiente veritatis ex eum ad unde.</p>
+          <div className={style.profile}>
+
+            <Image 
+              src="/github-profile.jpg" 
+              alt="Foto do Victor"
+              width={240}
+              height={240}
+            />
+            
+            <div>
+              <h2>Olá! Sou o Victor</h2>
+              <p>
+                Estudante de Engenharia de Software com foco em se tornar Desenvolvedor Fullstack. 
+                Atualmente estudando:
+              </p>
+              <div className={style.profile_skills}>
+                <span>🚀 Foco Atual:</span>
+                <p>Java, Next.js, TypeScript.js e Design Systems</p>
+              </div>
+            </div>
+
+          </div>
         </section>
       </main>
-      <footer className={styles.footer}>
-        
-      </footer>
+
+      <footer></footer>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 :root {
   /* Base escura */
   --bg-dark: #121212;
@@ -26,6 +28,9 @@ html, body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: rgb(14,14,14);
+  background: linear-gradient(50deg, rgba(14,14,14,1) 10%, rgba(42,42,42,1) 50%, rgba(14,14,14,1) 90%);
+  height: 100vh;
 }
 
 * {

@@ -1,0 +1,95 @@
+/* page.module.css */
+.main {
+    padding-top: 8rem;
+    min-height: calc(100vh - 8rem - 4rem);
+  }
+  
+  /* Section */
+.main section.profile_container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: rgb(179, 255, 0); */
+  }
+  
+  .main section.profile_container h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .main section.profile_container h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00C9FF;
+    margin: 0.5rem auto;
+  }
+  
+  /* Profile */
+  .profile_container .profile {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    background-color: #242424;
+    padding: 2rem;
+    border: 3px solid var(--gray-dark);
+    border-radius: 20px;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .profile h2 {
+    color: #00C9FF;
+    margin-bottom: 1rem;
+  }
+
+  .profile p {
+    color: white;
+  }
+  
+  .profile div.profile_skills {
+    background: linear-gradient(45deg, #1a1a1a, #3d3d3d);
+    padding: 1.2rem;
+    border-radius: 10px;
+    border-left: 3px solid #00C9FF;
+    margin-top: 1rem;
+  }
+  
+  .profile div.profile_skills {
+    color: #00C9FF;
+    font-weight: 600;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .profile {
+      display: flex !important;
+      flex-direction: column;
+    }
+  
+    .profile img {
+      width: 200px !important; 
+      height: 200px !important;
+      margin-bottom: 1rem; 
+    }
+  
+    .profile div {
+      text-align: center;
+    }
+  
+    .profile_skills {
+      display: flex !important;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-left: none;
+    }
+  }

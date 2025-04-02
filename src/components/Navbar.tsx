@@ -1,7 +1,5 @@
 "use client"
-
-import style from "../styles/Navbar.module.css";
-
+import style from "../styles/Navbar.module.css"
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -27,7 +25,7 @@ export default function Navbar() {
 
                     <div className={`${style.navbar_links} ${isOpen ? style.open : ""}`}>
                         <ul>
-                            <li><Link href="#">Sobre Mim</Link></li>
+                            <li><Link href="#section_aboutme">Sobre Mim</Link></li>
                             <li><Link href="#">Redes Sociais</Link></li>
                             <li><Link href="#">Projetos</Link></li>
                         </ul>

@@ -1,16 +1,15 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .navbar_container_wrapper {
     background-color: var(--bg-dark-transparent);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 
-    box-shadow: 0 0 10px black;
     border: 2px solid var(--overlay);
-    border-radius: 5px;
+    border-radius: 8px;
 
     position: fixed;
+    height: 4rem;
     max-width: 1200px;
     margin: 0 auto;
     right: 0;
