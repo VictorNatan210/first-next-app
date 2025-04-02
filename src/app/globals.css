@@ -33,3 +33,8 @@ body {
   padding: 0;
   margin: 0;
 }
+
+a, button {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
