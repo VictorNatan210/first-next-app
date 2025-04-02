@@ -26,8 +26,7 @@ export default function Home() {
             <div>
               <h2>Olá! Sou o Victor</h2>
               <p>
-                Estudante de Engenharia de Software com foco em se tornar Desenvolvedor Fullstack. 
-                Atualmente estudando:
+                Estudante de Engenharia de Software com foco em se tornar Desenvolvedor Fullstack.
               </p>
               <div className={style.profile_skills}>
                 <span>🚀 Foco Atual:</span>
