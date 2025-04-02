@@ -18,7 +18,7 @@ export default function Home() {
 
             <Image 
               src="/github-profile.jpg" 
-              alt="Foto do Victor"
+              alt="Foto do GitHub."
               width={240}
               height={240}
             />
